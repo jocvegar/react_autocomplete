@@ -1,28 +1,65 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Autocomplete from './Autocomplete';
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <div className="App">
+            <Autocomplete
+                options={[
+                    "area",
+                    "book",
+                    "business",
+                    "case",
+                    "child",
+                    "company",
+                    "country",
+                    "day",
+                    "eye",
+                    "fact",
+                    "family",
+                    "government",
+                    "group",
+                    "hand",
+                    "home",
+                    "job",
+                    "life",
+                    "lot",
+                    "man",
+                    "money",
+                    "month",
+                    "mother",
+                    "Mr",
+                    "night",
+                    "number",
+                    "part",
+                    "people",
+                    "place",
+                    "point",
+                    "problem",
+                    "program",
+                    "question",
+                    "right",
+                    "room",
+                    "school",
+                    "state",
+                    "story",
+                    "student",
+                    "study",
+                    "system",
+                    "thing",
+                    "time",
+                    "water",
+                    "way",
+                    "week",
+                    "woman",
+                    "word",
+                    "work",
+                    "world",
+                    "year"
+                ]}
+            />
+        </div>
     );
-  }
 }
 
 export default App;
